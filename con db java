@@ -1,0 +1,21 @@
+try{
+
+Class.forName("com.mysql.jdbc.Driver");
+Connection con =
+DriverManager.getConnection("jdbc:mysql://localhost:3306/javabase", "root", "");
+
+Statement stmt = con.createStatement();
+
+
+
+stmt.execute(sql);
+
+
+
+}
+
+catch(Exception e){ }
+
+
+
+/////ให้เปลี่ยน java base เป็นชื่อ database เรา\\\\\
